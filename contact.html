@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - PDFgear.cloud</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="https://ucarecdn.com/f72b58a5-ac55-420f-b6fe-dc42f3051d1a/-/preview/512x512/" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J1TQ05P57D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J1TQ05P57D');
+</script>
+  <style>
+    .contact-container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--gray-700);
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid var(--gray-300);
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    .form-group textarea {
+      height: 150px;
+      resize: vertical;
+    }
+    .submit-button {
+      background: var(--primary-color);
+      color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .submit-button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+    .contact-info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .contact-email {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--gray-100);
+      border-radius: 20px;
+      color: var(--gray-700);
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <a href="/">
+          <img src="https://ucarecdn.com/f72b58a5-ac55-420f-b6fe-dc42f3051d1a/-/preview/512x512/" alt="PDFgear.cloud" />
+          <span>PDFgear<span class="highlight">.cloud</span></span>
+        </a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/merge-pdf">Merge PDF</a></li>
+          <li><a href="/compress-pdf">Compress PDF</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h1 style="font-size: 2.5rem; margin-bottom: 15px;">Contact Us</h1>
+      <p style="color: var(--gray-600); margin-bottom: 15px;">Have a question or feedback? We'd love to hear from you!</p>
+      <div class="contact-email">
+        <i class="fas fa-envelope"></i>
+        <span>support@pdfgear.cloud</span>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form id="contactForm" onsubmit="return false;">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-logo">
+        <a href="/">
+          <img src="https://ucarecdn.com/f72b58a5-ac55-420f-b6fe-dc42f3051d1a/-/preview/512x512/" alt="PDFgear.cloud" />
+          <h3>PDFgear<span class="highlight">.cloud</span></h3>
+        </a>
+      </div>
+      <p class="footer-description">
+        PDFgear.cloud is a powerful online tool that helps you edit PDF files, compress, merge, and convert them to various formats.
+      </p>
+      <div class="footer-links">
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+      <p class="copyright">© 2025 PDFgear.cloud. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
